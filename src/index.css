@@ -5,12 +5,12 @@ Variables
 */
 
 :root {
-  --clr-primary: #2680c0;
-  --clr-primary-dark: hsl(205, 100%, 21%);
-  --clr-primary-light: hsl(205, 84%, 74%);
-  --clr-grey-1: #102a42;
-  --clr-grey-5: #617d98;
-  --clr-grey-10: #f1f5f8;
+  --clr-primary: #e58b7e;
+  --clr-primary-dark: hsl(0, 100%, 21%);
+  --clr-primary-light: hsl(9, 100%, 83%);
+  --clr-grey-1: #2e2623;
+  --clr-grey-5: #1f0d0d;
+  --clr-grey-10: #faf5ed;
   --clr-white: #fff;
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
@@ -32,7 +32,7 @@ body {
   background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 a {
   text-decoration: none;
@@ -51,7 +51,7 @@ h4 {
   margin-bottom: 0.75rem;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 h2 {
   font-size: 2rem;
@@ -70,13 +70,13 @@ p {
     font-size: 4rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   h3 {
     font-size: 2rem;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   body {
     font-size: 1rem;
@@ -219,8 +219,8 @@ Cart Item
   margin: 1.5rem 0;
 }
 .cart-item img {
-  width: 5rem;
-  height: 5rem;
+  width: 5.5rem;
+  height: 5.5rem;
   object-fit: cover;
 }
 .cart-item h4 {
@@ -235,7 +235,7 @@ Cart Item
   color: var(--clr-primary);
   letter-spacing: var(--spacing);
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 1rem;
   background: transparent;
   border: none;
   margin-top: 0.375rem;
