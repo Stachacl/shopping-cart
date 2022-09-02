@@ -1,4 +1,8 @@
 const reducer = (state,action) => {
+    //take all the values from the current state and only change cart value to the empty array:
+    if(action.type === 'CLEAR_CART') {
+        return {...state,cart:[]}
+    }
     return state
 }
 
