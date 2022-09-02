@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     title: 'Perfume',
-    price: 129.00,
+    price: 129.99,
     img:
       'https://ik.imagekit.io/stcl/Shop/pink-perfume_li0OeFpuj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1662095156582',
     amount: 1,
@@ -18,7 +18,7 @@ export default [
   {
     id: 3,
     title: 'Body lotion',
-    price: 35.50,
+    price: 35.59,
     img:
       'https://ik.imagekit.io/stcl/Shop/Pink-bottle_-DjaMA4bB.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1662095156603',
     amount: 1,
