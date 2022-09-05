@@ -27,17 +27,16 @@ const AppProvider = ({ children }) => {
   };
 
   const increase = (id) => {
-    dispatch ({type: 'INCREASE', payload: id})
-  }
+    dispatch({ type: "INCREASE", payload: id });
+  };
 
   const decrease = (id) => {
-    dispatch ({type: 'DECREASE', payload: id})
-  }
+    dispatch({ type: "DECREASE", payload: id });
+  };
 
   useEffect(() => {
-  console.log('hello');
-  }, [state.cart])
-
+    dispatch({ type: "GET_TOTALS" });
+  }, [state.cart]);
 
   return (
     <AppContext.Provider
