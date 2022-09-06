@@ -31,7 +31,7 @@ const reducer = (state, action) => {
   }
   if (action.type === "GET_TOTALS") {
     //setting a call back function:
-    const { total, amount } = state.cart.reduce(
+    let { total, amount } = state.cart.reduce(
       (cartTotal, cartItem) => {
         const { price, amount } = cartItem;
 
@@ -46,6 +46,8 @@ const reducer = (state, action) => {
         amount: 0,
       }
     );
+    //Limit the amount of numbers after coma in the total value:
+    total = parseFloat(total.toFixed(2));
 
     return { ...state, total, amount };
   }
