@@ -34,7 +34,11 @@ const reducer = (state, action) => {
     const { total, amount } = state.cart.reduce(
       (cartTotal, cartItem) => {
         const { price, amount } = cartItem;
-        cartTotal.amount += amount; //means that whatewer the value add the amount property value
+
+        const itemTotal = price * amount;
+        cartTotal.total += itemTotal;
+
+        cartTotal.amount += amount; //means that whatewer the value from each item add the amount property value
         return cartTotal;
       },
       {
