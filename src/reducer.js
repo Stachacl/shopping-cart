@@ -46,7 +46,7 @@ const reducer = (state, action) => {
         amount: 0,
       }
     );
-    //Limit the amount of numbers after coma in the total value:
+    //Limit the amount of float numbers (after coma) in the total value:
     total = parseFloat(total.toFixed(2));
 
     return { ...state, total, amount };
